@@ -1,8 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
+import logo from '../../assets/logo.png'
 
 // eslint-disable-next-line
 const StyledLeftComponent = styled.div`
+    position:fixed;
+    top:0;
+    left:0;
     width:40%;
     height:100vh;
     background-color:#241f21;
@@ -48,10 +52,10 @@ const LeftComponent = () => {
   return (
     <StyledLeftComponent>
         <ContentContainer>
-            <Logo src="/logo.png" alt="" />
+            <Logo src={logo} alt="" />
             <MainHeading>Code Deck</MainHeading>
             <SubHeading>Code. Compile. Develop</SubHeading>
-            <AddPlayground><span>+</span>Create Playground</AddPlayground>
+            <AddPlayground><span>+</span> Create New Playground</AddPlayground>
         </ContentContainer>
     </StyledLeftComponent>
   )
