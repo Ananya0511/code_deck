@@ -3,10 +3,12 @@ import {BrowserRouter, BrowserRouter as Router, Route, Routes} from 'react-route
 import Error404 from './screens/Error404';
 import Home from './screens/Home';
 import Playground from './screens/Playground';
+import { GlobalStyle } from './style/global';
 
 function App() {
   return (
     <BrowserRouter>
+    <GlobalStyle />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/playground" element={<Playground />} />
